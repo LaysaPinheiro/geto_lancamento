@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba de navegação -->
+    <title>G&TO - Uma nova Casa de Moda ESG com roupas no estilo Natural Esportivo</title>
+    <!-- Colocando imagem na aba do navegador -->
+    <link rel="icon" href="./img/Icone.png">
+    <!-- Colocando descrição no site -->
+    <meta name="description"
+        content="Uma casa de moda comprometida com o movimento ESG, focada no Estilo Natural Esportivo para quem busca por roupas confortáveis e despojadas.">
+    <!-- Link com o CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Importando ícones do font awesome -->
+    <script src="https://kit.fontawesome.com/33827983df.js" crossorigin="anonymous"></script>
+
+    <!-- Mensagem de alerta antes de enviar o email -->
+    <script>
+        function Mensagem() {
+            alert("Você será redirecionado para o seu servidor de email, caso não esteja logado no seu email, efetue o login e tente novamente")
+        }
+
+        function click_menu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function tamanho_site() {
+            if (window.innerWidth > 768) {
+                itens.style.display = 'flex'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</head>
+
+<body onresize="tamanho_site()">
+    <header>
+        <nav class="alinhamento">
+
+            <a class="link_logo" href="#">
+                <img class="logo" src="./img/LogoG&TO.png"
+                    alt="O logotipo da Jeito é composto apenas de letras no estilo sem serifa, modernas e condensadas, com a cor branca, o logo está em um fundo verde com uma pequena árvore na frente">
+            </a>
+
+            <ul class="menu" id="itens">
+                <li><a href="#">Home</a></li>
+                <li><a href="#quem_somos">Quem Somos?</a></li>
+                <li><a href="#conheca_esg">Conheça a ESG</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><i class="fa-solid fa-magnifying-glass" id="lupamobile"></i></li>
+            </ul>
+
+            <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+
+            <!-- Menu de hamburguer -->
+            <i id="burguer" class="fa-solid fa-bars" onclick="click_menu()"></i>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Página início da Jeito</h1>
+
+        <!-- Quem Somos? -->
+        <section class="quem_somos alinhamento" id="quem_somos">
+            <img class="primeira_foto" src="./img/roupas com plantas.png"
+                alt="A imagem mostra dez blusas em cabides quardadas em um armário, plantas e árvores estão no canto e se entrelaçam com as roupas dando um ar de natural.">
+
+            <div class="sobre">
+                <p class="sobre_titulo">Olá, Somos a G&TO!</p>
+                <p class="sobre_texto">Uma casa de moda comprometida com o movimento ESG, focada no Estilo Natural
+                    Esportivo para quem busca por roupas confortáveis e despojadas.</p>
+                <button class="btn_esg">
+                    <a href="#conheca_esg">Conheça a ESG</a>
+                </button>
+            </div>
+        </section>
+
+        <!-- Data de lançamento -->
+        <section class="data">
+            <p>Lançamento da <span>g&to</span></p>
+            <time datetime="2023-06-06">06/06/2023</time>
+        </section>
+
+        <!-- Imagens -->
+        <section class="imagens">
+            <div class="alinhamento">
+
+                <div class="imagens_lancamento">
+                <img class="imgs imgs2" src="./img/Inspira-tecidos-sustentaveis.jpg"
+                    alt="A imagem mostra uma mulher sentada no chão, ao seu lado tem vasos com plantas, suas roupas são brancas e o ambiente marrom.">
+                <p class="lançamento_texto1">A Moda Sustentável vai além do - think green. É um pensamento em cadeia.
+                    Uma forma de produção que preza pelo respeito ao meio ambiente, mas também foca na sociedade em
+                    todas as etapas do processo, valorizando quem se envolve na produção e estimulando o consumo
+                    consciente.</p>
+                </div>
+
+
+                <div class="imagens_lancamento imagens_lancamento2">
+                   
+                    <p class="lançamento_texto2">Cada vez mais, grandes marcas e grifes aderem a esta tendência. Na última
+                        edição do São Paulo Fashion Week o destaque nas passarelas foi para utilização inteligente e
+                        inovadora de materiais como o algodão orgânico e reciclado, tecido pirarucu, juta da Amazônia, malha
+                        pet e seda orgânica. Além de causarem menos impacto do que a produção têxtil convencional, a
+                        confecção destes tecidos gera renda para milhares de famílias.</p>
+                <img class="imgs imgs2" src="./img/imagem central.jpg"
+                    alt="A imagem mostra uma mulher com roupas do tom verde claro e um homem com roupas brancas, ambos estão em um ambiente que se assemelha com uma floresta.">
+           
+                </div>
+
+
+                <div class="imagens_lancamento">
+                <img class="imgs imgs2" src="./img/mulheres.jpeg"
+                    alt="A imagem mostra três mulheres em um banco, as moças das laterais estão com vestidos brancos com pretos e a do meio possui um vestido branco. O ambiente é aberto e parece com um campo.">
+                    <p class="lançamento_texto3">Essa noção se traduz em cores suaves e naturais, uma alfaiataria despojada
+                        e sem formalidade, roupas esportivas (com toques de alta-costura, é claro), calças superamplas onde
+                        o conforto impera e o beachwear que emergem um cenário solar e cheio de vida.</p>
+                </div>
+            </div>
+
+
+            <div class="icones">
+                <div class="vetores">
+                        <i class="fa-brands fa-cotton-bureau"></i>
+                        <i class="fa-solid fa-shirt"></i>
+                </div>
+                <img class="arvore" src="./img/Icone.png"
+                    alt="A imagem é um símbolo do logo da Jeito, uma árvore branca na parte central da tela que localiza-se embaixo das outras imagens.">
+                <div class="vetores">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESG -->
+        <section class="esg alinhamento" id="conheca_esg">
+            <div class="sobre_esg">
+                <p class="sobre_esg_titulo">O que é ESG?</p>
+                <p class="sobre_esg_texto">ESG é um conjunto de ideias e práticas que avaliam como as empresas cuidam do
+                    meio ambiente, das pessoas que trabalham com elas e de como são administradas. Por exemplo, uma
+                    empresa que usa materiais recicláveis e se preocupa em ter um ambiente de trabalho saudável para os
+                    funcionários tem uma boa nota em ESG. Isso é importante porque muitas pessoas estão preocupadas em
+                    apoiar empresas que cuidam do mundo e das pessoas, não só em ganhar dinheiro.</p>
+            </div>
+            <img src="./img/roupa esg.jpg"
+                alt="A imagem mostra uma mulher no centro de um ambiente branco e fechado, nele há objetos que simulam uma árvore que dá frutos com as cores marrom e verde. A roupa da moça é despojada e branca, ela está olhando para um dos objetos que simulam uma fruta. ">
+        </section>
+
+        <!-- Formulário -->
+        <section class="formulario">
+            <div class="formulario_texto">
+            <p class="formulario_titulo">Central de Atendimento</p>
+
+            <!-- C(criar) R(listar) U(atualizar) D(excluir) -->
+            <form method="post" action="mailto:geto@gmail.com" enctype="text/plain">
+                <!-- Nome -->
+                <div>
+
+                    <label for="name">Nome:</label>
+                    <input class="borda" type="text" id="name" name="name">
+
+                </div>
+
+                <!-- Email -->
+                <div>
+
+                    <label for="email">Email:</label>
+                    <input class="borda" type="text" id="email" name="email">
+
+                </div>
+
+                <!-- Mensagem -->
+                <div>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea class="borda" name="message" id="message" cols="40" rows="6"></textarea>
+
+                </div>
+
+                <button class="btn_forms" type="submit" onclick="Mensagem()">Enviar</button>
+            </form>
+        </div>
+
+
+                <img class="operadora" src="./img/operadora sem fundo certo.png" alt="A imagem mostra um desenho de uma operadora atendendo através de mensagem durante 24 horas.">
+
+        
+        </section>
+
+        <!-- Contato -->
+        <section class="contato alinhamento" id="contato">
+            <p class="contato_titulo">Contato</p>
+
+            <div class="conteudo_contato">
+
+                <div class="borda_mapa">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.698900349174!2d-46.57329922474684!3d-23.61512917876283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cec439b9ce3%3A0x92940269447ce633!2sR.%20Niter%C3%B3i%2C%20180%20-%20Centro%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009510-200!5e0!3m2!1spt-BR!2sbr!4v1683145092079!5m2!1spt-BR!2sbr"
+                        height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="contato_info">
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(99)99999-9999</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>contato@geto.com</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Rua Niterói, 180 - SCS
+                        <p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>@geto</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <p>@geto</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>@geto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <!-- &copy -->
+        <p>Todos os direitos reservados &#169; G&TO 2023</p>
+    </footer>
+</body>
+
+</html>
